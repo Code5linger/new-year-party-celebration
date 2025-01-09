@@ -241,7 +241,7 @@ button {
 
 .comingSoon,
 .year {
-  max-width: 330px;
+  min-width: 350px;
 }
 
 .comingSoon h2 {
@@ -264,9 +264,10 @@ button {
 }
 
 .circleImg {
-  padding: 50px;
+  padding: 25px;
   border: 10px solid var(--red);
   border-radius: 50%;
+  min-width: 400px;
 }
 
 .year {
