@@ -18,7 +18,7 @@
   --font-weight-bold: 800;
   --font-weight-semibold: 700;
   --font-weight-medium: 600;
-  --font-weight-regular: 400;
+  --font-weight-regular: 300;
 
   /* Font Size */
   --font-size-88: 88px;
@@ -184,12 +184,108 @@ button {
 
 /* location */
 .location {
-  background: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-image: linear-gradient(
+    to top,
+    var(--bg-white) 0%,
+    var(--red) 500%
+  );
+  background-size: cover;
+  background-position: center center;
+  color: var(--bg-white);
+  min-height: 600px;
+  min-width: 1320px;
+  border-radius: var(--extraSmall-gap);
+
+  font-family: var(--font-Merriweather);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-32);
+
+  padding: 0 130px;
+  margin: 0 140px;
+
+  text-align: left;
+}
+
+.location h1 {
+  font-family: var(--font-Inter);
+  font-size: var(--font-size-32);
+  font-weight: var(--font-weight-semibold);
+  color: var(--dark-01);
+}
+
+.location span {
+  color: var(--red);
+}
+
+.location button {
+  margin-top: var(--regular-gap);
 }
 
 /* Offer */
 .offer {
-  background: purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--large-gap);
+  min-height: 600px;
+  min-width: 1320px;
+  padding: 0 130px;
+  margin: 0 140px;
+  text-align: left;
+}
+
+.comingSoon,
+.year {
+  max-width: 330px;
+}
+
+.comingSoon h2 {
+  font-size: var(--font-size-24);
+  color: var(--red);
+  font-weight: var(--font-weight-medium);
+}
+
+.comingSoon h1 {
+  font-family: var(--font-Merriweather);
+  font-weight: var(--font-weight-black);
+  font-size: var(--font-size-48);
+  padding: var(--extraSmall-gap) 0 var(--small-gap) 0;
+}
+
+.comingSoon p,
+.year p {
+  font-size: var(--font-size-20);
+  font-weight: 300;
+}
+
+.circleImg {
+  padding: 50px;
+  border: 10px solid var(--red);
+  border-radius: 50%;
+}
+
+.year {
+  padding-top: 80px;
+}
+
+.year h3 {
+  font-size: var(--font-size-48);
+  color: var(--red);
+}
+
+.year p {
+  padding-top: var(--small-gap);
+  padding-bottom: var(--large-gap);
+  max-width: 276px;
+}
+
+.year img {
+  max-width: 140px;
 }
 
 /* Sale */
