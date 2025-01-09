@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Font Family */
+  --font-Merriweather: 'Merriweather', serif;
+  --font-Inter: 'Inter', sans-serif;
+
+  /* Font Weight */
+  --font-weight-black: 900;
+  --font-weight-bold: 800;
+  --font-weight-semibold: 700;
+  --font-weight-medium: 600;
+  --font-weight-regular: 400;
+
+  /* Font Size */
+  --font-size-88: 88px;
+  --font-size-72: 72px;
+  --font-size-64: 64px;
+  --font-size-48: 48px;
+  --font-size-32: 32px;
+  --font-size-24: 24px;
+  --font-size-20: 20px;
+  --font-size-18: 18px;
+
+  /* Spacing */
+  --section-gap: 12px;
+  --large-gap: 48px;
+  --regular-gap: 24px;
+  --small-gap: 22px;
+  --extraSmall-gap: 16px;
+
+  /* color */
+  --bg-white: #ffffff;
+}
+
+body {
+  background: var(--bg-white);
+  font-family: var(--font-Inter);
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-bold);
+}
+
+section {
+  padding: 0 0 120px 0;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hero Section */
+.heroSection {
+  padding: 50px 140px 0 140px;
+}
+
+.heroCta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url('./assets/images/Banner Image.png');
+  background-size: cover;
+  background-position: center center;
+  color: var(--bg-white);
+  min-height: 600px;
+  min-width: 1320px;
+  border-radius: var(--extraSmall-gap);
+
+  font-family: var(--font-Merriweather);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-32);
+}
+
+.heroCta h1 {
+  font-size: var(--font-size-72);
+  max-width: 632px;
+  padding-top: var(--extraSmall-gap);
+}
+
+/* CATEGORIES */
+.categorie {
+  background: green;
+}
+
+/* Welcome */
+.welcome {
+  background: yellow;
+}
+
+/* location */
+.location {
+  background: blue;
+}
+
+/* Offer */
+.offer {
+  background: purple;
+}
+
+/* Sale */
+.sale {
+  background: orange;
+}
+
+/* Gift */
+.gift {
+  background: orangered;
+}
+
+/* Portfolio */
+.portfolio {
+  background: orchid;
+}
+
+/* newsletter */
+.newsletter {
+  background: gold;
+}
