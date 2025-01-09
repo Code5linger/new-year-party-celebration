@@ -31,7 +31,6 @@
   --font-size-18: 18px;
 
   /* Spacing */
-  --section-gap: 12px;
   --large-gap: 48px;
   --regular-gap: 24px;
   --small-gap: 22px;
@@ -39,6 +38,8 @@
 
   /* color */
   --bg-white: #ffffff;
+  --red: #ff0000;
+  --dark-01: #070211;
 }
 
 body {
@@ -100,7 +101,26 @@ img {
 
 /* CATEGORIES */
 .categorie {
-  background: green;
+  color: var(--red);
+}
+
+.categorie h1 {
+  font-size: var(--font-size-88);
+}
+
+.categorie h2 {
+  color: var(--dark-01);
+  padding: var(--extraSmall-gap) 0 var(--large-gap) 0;
+}
+
+.categorie p {
+  padding-top: var(--large-gap);
+  font-weight: var(--font-weight-medium);
+}
+
+.categorie img {
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* Welcome */
